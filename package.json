@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node server",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider node dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --profile --config dev/webpack/webpack.prod.js",
+    "build": "webpack --profile --config dev/webpack/webpack.prod.js",
     "watch": "NODE_OPTIONS=--openssl-legacy-provider webpack --config dev/webpack/webpack.dev.js",
     "test": "eslint --format codeframe --ext .js,.vue . && pug-lint server/views && jest",
     "cypress:open": "cypress open",
@@ -84,7 +84,7 @@
     "filesize": "6.1.0",
     "fs-extra": "9.0.1",
     "getos": "3.2.1",
-    "graphql": "15.3.0",
+    "graphql": "14.0.0",
     "graphql-list-fields": "2.0.2",
     "graphql-rate-limit-directive": "1.2.1",
     "graphql-subscriptions": "1.1.0",
